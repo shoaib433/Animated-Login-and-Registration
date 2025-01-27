@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated LOGIN AND REGISTRATION Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body> 
+   <header class="header">
+    <nav class="navbar">
+        <a href="#">Home</a>
+        <a href="#">Portfolio</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#">Help</a>
+    </nav>
+    <form action="" class="search-bar">
+        <input type="text" placeholder="Search...">
+        <button><i class='bx bx-search'></i></button>
+    </form>
+   </header>
+   <!--Login Form-->
+   <div class="background"></div>
+   <div class="container">
+    <div class="item">
+        <h2 class="logo"><i class='bx bxl-xing'></i>5 Stars Square</h2>
+        <div class="text-item">
+            <h2>Welcome! <br><span>To My Website</span></h2>
+            <p>Hey there! So, signing up for something is pretty straightforward. It usually just involves filling out a form with your basic information like name, email address, and maybe a password. Sometimes you might also have to confirm your email or agree to some terms and conditions.</p>
+            <div class="social-icons">
+                <a href="https://web.facebook.com/?_rdc=1&_rdr"><i class='bx bxl-facebook'></i></a>
+                <a href="https://www.tiktok.com/foryou?lang=en"><i class='bx bxl-tiktok'></i></a>
+                <a href="https://www.youtube.com/"><i class='bx bxl-youtube'></i></a>
+                <a href="https://pk.linkedin.com/"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://www.upwork.com/"><i class='bx bxl-upwork'></i></a>
+                <a href="https://www.instagram.com/"><i class='bx bxl-instagram'></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="login-section">
+        <div class="form-box login">
+            <form action="" id="loginForm">
+                <h2>Sign In</h2>
+                <div class="input-box">
+                    <span class="icon"><i class='bx bxs-envelope'></i></span>
+                    <input type="email" required>
+                    <label for="">Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><i class='bx bxs-lock-alt'></i></span>
+                    <input type="password" required>
+                    <label for="">Password</label>
+                </div>
+                <div class="remember-password">
+                    <label for=""><input type="checkbox">Remember Me</label>
+                    <a href="#">Forget Password</a>
+                </div>
+                <button class="btn">Login</button>
+                <div class="create-account">
+                    <p>Create a new account?<a href="#" class="register-link">Sign Up</a></p>
+                </div>
+            </form>
+        </div>
+        <div class="form-box register">
+            <form action="" id="registerForm">
+                <h2>Sign Up</h2>
+                <div class="input-box">
+                    <span class="icon"><i class='bx bxs-user'></i></span>
+                    <input type="text" required>
+                    <label>Username</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><i class='bx bxs-envelope'></i></span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><i class='bx bxs-lock-alt'></i></span>
+                    <input type="password" required>
+                    <label for="">Password</label>
+                </div>
+                <div class="remember-password">
+                    <label for=""><input type="checkbox">I agree with this statement</label>
+                </div>
+                <button class="btn">Register</button>
+                <div class="create-account">
+                    <p>Already have an account?<a href="#" class="login-link">Sign In</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+   </div>
+   
+    <!-- Popup HTML -->
+    <div class="popup" id="popup">
+        <ion-icon name="checkmark-circle-outline"></ion-icon>
+        <h2>Thank you!</h2>
+        <p>Your registration was successfully completed. Thanks!</p>
+        <button onclick="closePopup()">OK</button>
+    </div>
+
+   <script src="script.js"></script>
+</body>
+</html>
